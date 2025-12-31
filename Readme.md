@@ -30,7 +30,7 @@
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/MacTelPowerMon.git
+   git clone https://github.com/woss102910/MacTelPowerMon.git
    ```
 2. Make the script executable:
    ```bash
