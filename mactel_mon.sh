@@ -160,16 +160,10 @@ for ((i=1;i<=SAMPLES;i++)); do
         printf "%-8s %-6s %-120s %-6s\n" "$pid" "$cpu" "$cmd" "$watt"
     done
 
-    # 🔹 Internal processes in yellow
-    echo -e "${YELLOW}Internal processes (informative only):${NC}"
-    echo "$INTERNAL" | while IFS="|" read pid cpu cmd type; do
-        printf "%-8s %-6s %-120s\n" "$pid" "$cpu" "$cmd"
-    done
-
     total_idle_watts=$(gawk -v t=$total_idle_watts -v i=$idle 'BEGIN{print t+i}')
 
     echo -e "${GREEN}Estimated ideal idle (after closing top 5): $idle W${NC}"
-    echo "Estimated battery time after closing top 5: $batt_idle_minutes min"
+    [[ "$MODE" == "BATTERY" ]] && echo "Estimated battery time after closing top 5: $batt_idle_minutes min"
     echo "CPU/GPU Temperature: ${temp} °C"
 
     sleep 7

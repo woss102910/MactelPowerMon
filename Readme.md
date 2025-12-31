@@ -1,6 +1,6 @@
-# MacTelPowerMon
+# MactelPowerMon
 
-**MacTelPowerMon** is a lightweight, terminal-based power and resource monitoring tool for Intel Macs. It provides realistic CPU, RAM, battery consumption estimates, and identifies applications consuming high resources, serving as a lightweight alternative to heavy apps.
+**MactelPowerMon** is a lightweight, terminal-based power and resource monitoring tool for Intel Macs. It provides realistic CPU, RAM, battery consumption estimates, and identifies applications consuming high resources, serving as a lightweight alternative to heavy apps.
 
 ---
 
@@ -10,7 +10,7 @@
 - Highlights top processes by CPU consumption and potential energy savings
 - Calculates an "ideal idle" consumption after closing the top 5 resource-hungry processes
 - Lightweight, terminal-based, minimal dependencies
-- Designed specifically for **Intel-based MacBooks** (tested on MacBook Pro Late 2011, 8,3 with macOS Sequoia 15.7.2)
+- Designed specifically for **Intel-based MacBooks** (tested on MacBook Pro Late 2011, 8,3 running Sequoia 15.7.2)
 
 ---
 
@@ -30,11 +30,11 @@
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/woss102910/MacTelPowerMon.git
+   git clone https://github.com/woss102910/MactelPowerMon.git
    ```
 2. Make the script executable:
    ```bash
-   cd MacTelPowerMon
+   cd MactelPowerMon
    chmod +x mac_tel_power_mon.sh
    ```
 3. Run the script:
